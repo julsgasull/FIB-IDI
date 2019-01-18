@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------
+                                    BLOC 1
+--------------------------------------------------------------------------------
+
+-- SESSIÓ 1.1
+    - Ex 1: triangle deformat per 1 vèrtex
+    - Ex 2: quadrat
+    - Ex 3: quadrat (viewport LB), triangle (viewport RT)
+    - Ex 4: quadrat (viewport LB), triangle (viewport RT), triangle (viewport LT)
+    - Ex 5: quadrat (viewport LB), triangle (viewport LB), triangle (viewport LB)
+    - Ex 6: quadrat (viewport LB), triangle (viewport LB), triangle (viewport LB) +
+            quadrat (viewport RT), triangle (viewport RT), triangle (viewport RT)
+
+-- SESSIÓ 1.2
+    - Ex 1: triangle 4 colors
+    - Ex 2: triangle 4 colors amb ratlles
+    - Ex 3: triangle 4 colors (1/4 viewport centrat)
+    - Ex 4: triangle degradat colors (1/4 viewport centrat)
+
+-- SESSIÓ 1.3
+    - Ex 1: matriu translació vèrtex shader (modificar teclat)
+    - Ex 2: translació + rotació 45 graus respecte eix Z
+    - Ex 3: rotació 45 graus respecte eix Z +  translació
+    - Ex 4: escalat amb les tecles 's' i 'd'
+    - Ex 5: escalat no uniforme amb el ratolí
+    - Ex 6: dos objectes --> obj1: rotació +30º, obj2: rotació -30º (tecles)
+
+--------------------------------------------------------------------------------
+                                    BLOC 2
+--------------------------------------------------------------------------------
+
+-- SESSIÓ 2.1
+    - Ex 1: projectTransform() amb paràmetres fixes (FOV, ra, znear, zfar)
+    - Ex 2: viewTransform() amb paràmetres fixes (OBS, VRP, UP) + ini_camera()
+    - Ex 3: caseta de costat --> canviar vector UP
+    - Ex 4: afegir HomerProves
+    - Ex 5: rotate 45º sobre eix Y del Homer
+    - Ex 6: afegir terra al Homer
+
+-- SESSIÓ 2.2
+    - Ex 1: calcular Pmin, Pmax i centre de l'escena (HomerProves)
+    - Ex 2: càmera en tercera persona a partir dels valors de ex 2.1 (HomerProves)
+    - Ex 3: resizeGL càmera perspectiva (HomerProves)
+    - Ex 4: col·locar Patricio i situar-lo al centre amb altura 4
+    - Ex 5: viewTransform() amb angles d'Euler en comptes de looAt(OBS, VRP, UP) (Patricio)
+    - Ex 6: moure angles d'Euler (theta, psi) utilitzant el mouse (Patricio)
+
+-- SESSIÓ 2.3
+    - Ex 1: zoom-in/zoom-out amb ratolí i teclat
+    - Ex 2: col·locar 3 patricios en diferents punts
+    - Ex 3: canviar de càmera perspectiva a ortogonal amb Key_O
+    - Ex 4: resizeGL càmera ortogonal
+
+-- SESSIÓ 2.4 (QtDesigner)
+    - Ex 1: zoom canviant el FOV (slider + spinbox)
+    - Ex 2: canviar model Patricio - Legoman (radio button)
+    - Ex 3: canviar òptica perspectiva - ortogonal (radio button)
+    - Ex 4: canviar escalat, compatible amb tecles S, D (spinbox)
+    - Ex 5: modificar angles Euler --> psi, theta (dos dials)
+    - Ex 6: canviar el color de cada component (r,g,b) del terra (3 dials) + mostra color (myLabel)
+    - Ex 7: canviar el color de cada component (r,g,b) del fons (3 dials) + mostra color (myLabel)
+    - Ex 8: canviar tamany viewport: width i height (dos sliders)
+
+
+--------------------------------------------------------------------------------
+                                    BLOC 3
+--------------------------------------------------------------------------------
+
+-- SESSIÓ 3.1
+    - Ex 1: canvi color amb Lambert (VS)
+    - Ex 2: canvi color amb Phong (VS)
+    - Ex 3: terra + paret --> plàstic blau brillant (.cpp)
+    - Ex 4: modificar posició focus de llum --> (1, 0, 1) en SCA (VS)
+    - Ex 5: colFocus, posFocus uniform --> passen desde aplicació (.cpp)
+    - Ex 6: canviar focus llum (X-,X+) amb les tecles K, L (respectivament)
+
+-- SESSIÓ 3.2
+    - Ex 1: canviar focus llum a focus de càmera (enlloc de focus d'escena)
+    - Ex 2: càlcul de color al fragment shader
+
+-- SESSIÓ 3.3
+    - Ex 1: canviar entre focus escena - càmera (key 'F')
+    - Ex 2: posició focus de càmera sobre del patricio i moure focus + Patricio alhora (eix X, Z)
+    - Ex 3: canviar color focus a groc --> terra negre (groc = R+G, terra = B --> R+G+B = negre)
+    - Ex 4: activar/desactivar (key 'B') back-face culling (si està activat no es veu la paret desde darrere)
+    - Ex 5: apagar/encendre (key 'L') focus de llum (canviar color focus a negre)
